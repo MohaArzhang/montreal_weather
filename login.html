@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Montreal Weather</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <fieldset id="form">
+            <legend id="legend">Login</legend>
+            <div id="emailHolder">
+                Email Address
+                <input type="text" id="emailAd">
+            </div>
+            <div id="passHolder">
+                <label for="pass">Password</label><br>
+                <input type="password" id="pass"><br>
+            </div>
+            <button id="login" onclick="loginRun()">Login</button>
+
+            <div id="textHolder">
+                <div id="todayMsg">Today's message: <span id="todayMsgTxt">N/A</span>
+                    
+                </div>
+                <div id="todayDate">Today's date: <span id="todayDateTxt"></span>
+                </div>
+                <div id="timeNow">Time now: <span id="timeNowTxt"></span>
+                </div>
+
+        </fieldset>
+
+        <div id="message">
+        </div>
+    </div>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

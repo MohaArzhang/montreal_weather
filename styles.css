@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(cloud.jpg);
+    background-size: cover;
+}
+
+#container {
+    width: 300px;
+    height: 285px;
+    padding: 0, 15px, 15px, 15px;
+    margin: auto;
+    background-color: white;
+}
+
+#form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(227, 227, 227);
+}
+
+#legend {
+    font-weight: bold;
+    color: rgb(43, 43, 242);
+    font-size: 1.5rem;
+}
+
+#login,
+#emailHolder,
+#passHolder,
+#textHolder,
+#todayMsg,
+#todayDate,
+#timeNow {
+    margin-top: 10px;
+}
