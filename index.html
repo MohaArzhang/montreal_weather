@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <title>Montreal Weather</title>
 
 </head>
 
 <body>
-    <div class="containerUp">For Login Use:</div>
-    <div class="containerUp">user: admin@yopmail.com</div>
-    <div class="containerUp">password: adminyopmail</div>
+    <div id="up">
+        <div class="containerUp">For Login Use:</div>
+        <div class="containerUp">user: admin@yopmail.com</div>
+        <div class="containerUp">password: adminyopmail</div>
+    </div>
     <div id="container">
         <fieldset id="form">
             <legend id="legend">Login</legend>
             <div id="emailHolder">
-                Email Address
+                <div class="labelTxt"><label for="emailAd">Email Address</label></div>
                 <input type="text" id="emailAd">
             </div>
-            <div id="passHolder">
-                <label for="pass">Password</label><br>
-                <input type="password" id="pass"><br>
+            <div id="emailHolder">
+                <div class="labelTxt"><label for="pass">Password</label></div>
+                <input type="text" id="pass">
             </div>
             <button id="login" onclick="loginRun()">Login</button>
 
             <div id="textHolder">
                 <div id="todayMsg">Today's message: <span id="todayMsgTxt">N/A</span>
-                    
+
                 </div>
                 <div id="todayDate">Today's date: <span id="todayDateTxt"></span>
                 </div>

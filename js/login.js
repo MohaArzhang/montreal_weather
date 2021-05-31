@@ -3,6 +3,8 @@
 let todayDateTxt = document.getElementById('todayDateTxt');
 let timeNowTxt = document.getElementById('timeNowTxt');
 let container = document.getElementById('container');
+let textLogin = document.getElementById('form');
+let upTxt = document.getElementById('up');
 let today = new Date();
 let weekday = today.getDay();
 todayDateTxt.textContent = today.toLocaleString('en-AU', {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric'});
@@ -82,5 +84,9 @@ function displayWeather(data) {
         minMax.style.textAlign = "left";
         dayNight.style.marginLeft = "10px";
         dayNight.style.textAlign = "left";
+        pass.value = "";
+        emailAd.value = "";
+        textLogin.style.display = "none";
+        upTxt.style.display = "none";
     }
 }
